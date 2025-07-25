@@ -51,6 +51,36 @@ export default function RandomColor() {
       >
         Generate Random Color
       </button>
+
+      <label
+        style={{
+          display: "inline-block",
+          padding: "10px 20px",
+          marginLeft: "10px",
+          backgroundColor: "#1a1a1a",
+          color: "#fff",
+          border: "none",
+          borderRadius: "8px",
+          cursor: "pointer",
+          fontSize: "16px",
+          textAlign: "center",
+        }}
+      >
+        Select Color
+        <input
+          type="color"
+          value={color}
+          onChange={(e) => setColor(e.target.value)}
+          style={{
+            opacity: 0,
+            position: "absolute",
+            width: 0,
+            height: 0,
+            pointerEvents: "none",
+          }}
+        />
+      </label>
+
       <div
         style={{
           display: "flex",
@@ -59,8 +89,8 @@ export default function RandomColor() {
           color: "#fff",
           fontSize: "30px",
           marginTop: "10px",
-          flexDirection  :'column',
-          gap :'20px'
+          flexDirection: "column",
+          gap: "20px",
         }}
       >
         <h3>{typeOfColor === "rgb" ? "RGB Color" : "HEX Color"}</h3>
