@@ -19,7 +19,12 @@ export default function LoadMoreData() {
       const result = await response.json();
 
       if (result && result.products && result.products.length) {
-        setProducts((prevData) => [...prevData, ...result.products]);
+        setProducts((prevData) => {
+          const newItems = result.products.filter(
+            (newProduct) => !prevData.some((p) => p.id === newProduct.id)
+          );
+          return [...prevData, ...newItems];
+        });
         setLoading(false);
       }
 
@@ -60,7 +65,7 @@ export default function LoadMoreData() {
         <button disabled={disableButton} onClick={() => setCount(count + 1)}>
           Load More Products
         </button>
-        {disableButton ? <p>You have reached to 100 products</p> : null}
+        {disableButton ? <p style={{color:"red"}}>You have reached to 100 products</p> : null}
       </div>
     </div>
   );
