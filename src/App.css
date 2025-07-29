@@ -41,3 +41,14 @@
 .read-the-docs {
   color: #fcfbfb;
 }
+
+.Weather-container{
+  text-align: center;
+  margin: -200px auto 0px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 20px;
+  height: 570px;
+  padding: 20px 15px;
+  background: rgb(0, 255, 166);
+}
