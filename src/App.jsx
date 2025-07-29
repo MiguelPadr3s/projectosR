@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Accordian from "./components/accordian";
 import RandomColor from "./components/random-color";
 import StarRating from "./components/star-rating";
@@ -26,15 +27,7 @@ function App() {
       {/* <SearchAutocomplete/> */}
 
       {/* Weather */}
-      {/* <div className="Weather-container"><Weather /></div> */}
-
-      {/* food recipe */}
-
-      <div className="bg-red-500 text-white p-4 text-center">
-      Tailwind is working!
-    </div>
-
-
+      <div className="Weather-container"><Weather /></div>
     </div>
   );
 }
