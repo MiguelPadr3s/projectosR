@@ -34,3 +34,18 @@
   cursor: pointer;
   padding: 13px 15px;
 }
+
+img {
+  display: block;
+  margin-bottom: 10px; /* reduce space below the image */
+  max-width: 10%;
+  height: auto;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* spacing between logo and input/button */
+  margin: -10px auto;
+}

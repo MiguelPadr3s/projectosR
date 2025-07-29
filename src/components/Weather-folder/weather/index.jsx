@@ -73,26 +73,17 @@ export default function Weather() {
                 : ""}
             </p>
             <div className="weather-info">
-              <div>
+              <div className="column">
                 <div>
-                  <p className="wind">{WeatherData?.wind?.speed}</p>
-                  <p>Wind Speed</p>
+                  <p className="wind">Wind Speed: {WeatherData?.wind?.speed}</p>
                 </div>
               </div>
-              <div>
+              <div className="column">
                 <div>
-                    <p>{WeatherData?.main?.humidity}%</p>
-                    <p>Humidity</p>
+                  <p>Humidity: {WeatherData?.main?.humidity}%</p>
                 </div>
               </div>
             </div>
-            <h2>
-              Temperatura:{" "}
-              {WeatherData?.main.temp
-                ? `${(WeatherData.main.temp - 273.15).toFixed(0)}°C`
-                : "Loading..."}
-            </h2>
-            <h2>Humedad: {WeatherData?.main.humidity}%</h2>
           </div>
         </div>
       )}

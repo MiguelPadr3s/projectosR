@@ -24,10 +24,10 @@ function App() {
 
       {/* Search Autocomplete with API */}
       {/* <SearchAutocomplete/> */}
-      <div className="Weather-container">
-        {/* Weather */}
-        <Weather />
-      </div>
+
+      {/* Weather */}
+      {/* <div className="Weather-container"><Weather /></div> */}
+
     </div>
   );
 }
