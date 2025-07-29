@@ -11,5 +11,6 @@ export default function Search({search, setSearch}){
         value={search}
         onChange={(event)=> setSearch(event.target.value)}
         />
+        <button className="search-btn">Search Weather</button>
     </div>
 }
