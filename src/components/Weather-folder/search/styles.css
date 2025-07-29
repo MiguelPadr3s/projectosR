@@ -1,4 +1,36 @@
-.city-search{
-    background-color: #fff;
-    color: #000;
+.search-engine {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.search-engine input {
+  width: 70%;
+  height: 45px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 2px 15px;
+  font-size: 16px;
+  outline: none;
+  background-color: #fff;
+  color: #555;
+}
+
+.search-engine button {
+  height: 52px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 15px;
 }

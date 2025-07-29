@@ -2,4 +2,6 @@ body{
     background-color: #fff;
     color: #000;
     font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
