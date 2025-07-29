@@ -28,6 +28,13 @@ function App() {
       {/* Weather */}
       {/* <div className="Weather-container"><Weather /></div> */}
 
+      {/* food recipe */}
+
+      <div className="bg-red-500 text-white p-4 text-center">
+      Tailwind is working!
+    </div>
+
+
     </div>
   );
 }
